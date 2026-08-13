@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Flora Scan",
+    "slug": "flora-scan",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0f1f14",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reflexmediacom.florascan",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Flora Scan a besoin de la caméra pour photographier les plantes à identifier.",
+        "NSPhotoLibraryUsageDescription": "Flora Scan a besoin d'accéder à tes photos pour identifier des plantes."
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Flora Scan a besoin d'accéder à tes photos pour identifier des plantes.",
+          "cameraPermission": "Flora Scan a besoin de la caméra pour photographier les plantes à identifier."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "019ff8dc-6599-77de-ad73-7bd28428072e"
+      }
+    },
+    "owner": "reflex-mediacom"
+  }
+}
